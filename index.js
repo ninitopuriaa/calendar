@@ -29,4 +29,23 @@ const calendar = () => {
     currentDate.innerHTML = `${months[currMonth]} ${currYear}`;
     datesTag.innerHTML = liTag;
 }
+
+prev.addEventListener("click", () => {
+    currMonth = currMonth - 1;
+    if (currMonth < 0) {
+        currMonth = 11;
+        currYear = currYear - 1;
+    }
+    calendar();
+});
+
+next.addEventListener("click", () => {
+    currMonth = currMonth + 1;
+    if (currMonth > 11) {
+        currMonth = 0;
+        currYear = currYear + 1;
+    }
+    calendar();
+});
+
 calendar();
