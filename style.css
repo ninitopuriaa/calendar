@@ -45,3 +45,12 @@ p{
     margin: 50px auto;
     border-radius: 10px;
 }
+#prev, #next{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: brown;
+    border-radius: 50%;
+    border: 1px solid brown;
+}
